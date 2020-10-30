@@ -1,0 +1,12 @@
+<h1>Welcome Books Blog</h1>
+
+<p><b> Today is: </b><%= @date %></p>
+
+<p><b> Time is: </b><%= @time %></p>
+
+
+<% if @books.any? %>
+  <%= link_to 'See my Books', books_url %>
+<% else %>
+  <p> There isn't Book :(</p>
+<% end %> 
